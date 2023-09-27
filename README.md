@@ -39,6 +39,7 @@ If changes you make require migrations, or you merge migrations made by others i
 ```console
 > user@machine:~/dev-directory$ docker compose exec -it app bash
 > root@container-id:/virtual-instrument-museum/vim-app$ python manage.py migrate
+
 ```
 
 ## Loading data
