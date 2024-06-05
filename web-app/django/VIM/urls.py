@@ -31,3 +31,5 @@ urlpatterns = i18n_patterns(
 
 if settings.IS_DEVELOPMENT:
     urlpatterns += [path("__debug__/", include("debug_toolbar.urls"))]
+
+handler404 = 'VIM.views.custom_404'

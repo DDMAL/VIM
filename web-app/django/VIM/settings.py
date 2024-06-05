@@ -23,7 +23,8 @@ IS_DEVELOPMENT = bool(os.environ.get("DEVELOPMENT") == "true")
 IS_PRODUCTION = not IS_DEVELOPMENT
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = IS_DEVELOPMENT
+# DEBUG = IS_DEVELOPMENT
+DEBUG = False # comment the above and uncommont this line to be able to get a proper 404.html page
 
 ALLOWED_HOSTS = [os.environ.get("HOST_NAME")]
 
