@@ -24,7 +24,6 @@ IS_PRODUCTION = not IS_DEVELOPMENT
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = IS_DEVELOPMENT
-# DEBUG = False # uncomment this for testing http error code pages
 
 ALLOWED_HOSTS = [os.environ.get("HOST_NAME")]
 
