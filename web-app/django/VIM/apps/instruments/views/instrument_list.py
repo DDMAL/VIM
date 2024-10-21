@@ -1,8 +1,10 @@
+""" Django views for the instrument list page. """
+
 from django.db.models import Prefetch
 from django.db.models.query import QuerySet
 from django.views.generic import ListView
-from VIM.apps.instruments.models import Instrument, Language, InstrumentName
 import requests
+from VIM.apps.instruments.models import Instrument, Language, InstrumentName
 
 
 class InstrumentList(ListView):
